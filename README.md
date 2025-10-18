@@ -2,9 +2,9 @@
 
 Scrapes events from SIFF.net (Seattle International Film Festival) calendar and generates iCal feeds.
 
-## Note
+## Disclaimer
 
-This project has nothing to do with the SIFF organization.  It's just a personal project I created for my own convenience - seemed like something that would be useful.  I hope you like it.
+**This is an independent, unofficial project and is not affiliated with, endorsed by, or connected to the Seattle International Film Festival (SIFF) or SIFF.net in any way.** This is a personal project created for convenience to make SIFF's publicly available calendar data easier to consume in standard calendar applications. All event data is sourced from the public SIFF.net website.
 
 ## Features
 

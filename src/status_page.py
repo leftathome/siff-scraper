@@ -55,10 +55,22 @@ class StatusPageGenerator:
         .calendar-links a:hover {{
             background-color: #0056b3;
         }}
+        .disclaimer {{
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }}
     </style>
 </head>
 <body>
     <h1>SIFF Calendar Scraper Status</h1>
+
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> This is an independent, unofficial project and is not affiliated with, endorsed by, or connected to the Seattle International Film Festival (SIFF) or SIFF.net in any way. All event data is sourced from the public SIFF.net website.
+    </div>
 
     <div class="status {status_class}">
         <strong>Last Scrape:</strong> {last_scrape.strftime('%Y-%m-%d %H:%M:%S')} UTC<br>
