@@ -34,15 +34,6 @@ class SiffScraper:
         html = self.http_client.get(url)
         events = self.calendar_parser.parse_day(html, event_date)
 
-        # Fetch details for each event
-        for event in events:
-            try:
-                detail_html = self.http_client.get(event.detail_url)
-                event.description = self.detail_parser.parse_description(detail_html)
-            except Exception as e:
-                print(f"Warning: Failed to fetch details for {event.detail_url}: {e}")
-                # Keep event with empty description
-
         return events
 
     def scrape_all(self, start_date: date = None) -> list[Event]:
