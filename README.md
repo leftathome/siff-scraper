@@ -1,6 +1,10 @@
 # SIFF Calendar Scraper
 
-Scrapes events from SIFF.net calendar and generates iCal feeds.
+Scrapes events from SIFF.net (Seattle International Film Festival) calendar and generates iCal feeds.
+
+## Note
+
+This project has nothing to do with the SIFF organization.  It's just a personal project I created for my own convenience - seemed like something that would be useful.  I hope you like it.
 
 ## Features
 
@@ -49,8 +53,7 @@ This project uses GitHub Actions to scrape the calendar nightly and publish to G
 
 1. Enable GitHub Pages in repository settings:
    - Settings > Pages
-   - Source: Deploy from a branch
-   - Branch: `gh-pages`, folder: `/ (root)`
+   - Source: GitHub Actions
 
 2. The workflow runs automatically at 2 AM UTC daily
 
