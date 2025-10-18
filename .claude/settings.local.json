@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.siff.net)",
+      "Bash(echo:*)",
+      "Bash(env)",
+      "Read(//c/Users/steve/.claude/**)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(export SUPERPOWERS_SKILLS_ROOT=\"$HOME/.config/superpowers/skills\")",
+      "Read(//c/Users/steve/.config/superpowers/skills/skills/collaboration/brainstorming/**)",
+      "Bash(mkdir:*)",
+      "Read(//c/Users/steve/.config/superpowers/skills/skills/collaboration/subagent-driven-development/**)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "Bash(pytest:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(venv/Scripts/python -m pytest tests/test_http_client.py -v)",
+      "Bash(test:*)",
+      "Bash(source venv/Scripts/activate)",
+      "Bash(\"venv\\Scripts\\python.exe\" -m pytest tests/test_ical_generator.py -v)",
+      "Bash(\"venv\\Scripts\\python.exe\" -m pytest tests/ -v)",
+      "Bash(\"venv\\Scripts\\python.exe\" -m pytest tests/test_ical_generator.py -v --tb=short)",
+      "Bash(git show:*)",
+      "Bash(python:*)",
+      "Bash(./venv/Scripts/python:*)",
+      "Bash(pip install:*)",
+      "Bash(\"venv/Scripts/python.exe\" -c:*)",
+      "Bash(\"venv/Scripts/python.exe\":*)",
+      "Bash(\"venv/Scripts/python.exe\" -m pytest tests/test_http_client.py::test_cached_http_client_caching -vv)",
+      "Bash(git checkout:*)",
+      "Bash(\"venv/Scripts/python.exe\" -m pytest tests/test_http_client.py -v)",
+      "Bash(\"venv/Scripts/python.exe\" -m pytest tests/test_status_page.py -v)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

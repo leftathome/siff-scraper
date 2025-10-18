@@ -43,7 +43,7 @@ pytest --cov=src --cov-report=html
 - `output/siff-film-center.ics`
 - `output/siff-all.ics`
 - `output/siff-programming-only.ics`
-- `output/status.html`
+- `output/index.html` (status page)
 
 ## Deployment
 
@@ -62,12 +62,12 @@ This project uses GitHub Actions to scrape the calendar nightly and publish to G
 ### Access Feeds
 
 After deployment, calendars are available at:
+- `https://leftathome.github.io/siffscrape/` (status page with links)
 - `https://leftathome.github.io/siffscrape/siff-all.ics`
 - `https://leftathome.github.io/siffscrape/siff-programming-only.ics`
 - `https://leftathome.github.io/siffscrape/siff-downtown.ics`
 - `https://leftathome.github.io/siffscrape/siff-uptown.ics`
 - `https://leftathome.github.io/siffscrape/siff-film-center.ics`
-- `https://leftathome.github.io/siffscrape/status.html`
 
 ## Architecture
 

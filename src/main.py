@@ -48,7 +48,7 @@ def main():
         print("Generating status page...")
         status_gen = StatusPageGenerator()
         status_html = status_gen.generate(events, start_time, scrape_success=True)
-        (output_dir / "status.html").write_text(status_html, encoding='utf-8')
+        (output_dir / "index.html").write_text(status_html, encoding='utf-8')
 
         print(f"Done! Outputs written to {output_dir}/")
         return 0
@@ -59,7 +59,7 @@ def main():
         # Generate error status page
         status_gen = StatusPageGenerator()
         status_html = status_gen.generate([], start_time, scrape_success=False)
-        (output_dir / "status.html").write_text(status_html, encoding='utf-8')
+        (output_dir / "index.html").write_text(status_html, encoding='utf-8')
 
         return 1
 

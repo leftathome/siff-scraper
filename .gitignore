@@ -41,7 +41,7 @@ htmlcov/
 cache/
 output/
 *.ics
-status.html
+index.html
 
 # OS
 .DS_Store
