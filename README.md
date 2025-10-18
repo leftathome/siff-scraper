@@ -4,11 +4,13 @@ Scrapes events from SIFF.net calendar and generates iCal feeds.
 
 ## Features
 
-- Per-venue iCal feeds (Downtown, Uptown, Film Center)
-- Combined all-events feed
-- SIFF-curated programming only feed
+- Scrapes SIFF.net calendar for all venues
+- Generates separate iCal feeds per venue
+- Provides combined feed of all events
+- Special feed for SIFF-curated programming only (excludes first-run releases)
 - Status page with scrape statistics
-- Respects rate limits with caching
+- Respectful rate limiting and caching
+- Automated nightly updates via GitHub Actions
 
 ## Usage
 
@@ -63,3 +65,25 @@ After deployment, calendars are available at:
 - `https://YOUR-USERNAME.github.io/siffscrape/siff-uptown.ics`
 - `https://YOUR-USERNAME.github.io/siffscrape/siff-film-center.ics`
 - `https://YOUR-USERNAME.github.io/siffscrape/status.html`
+
+## Architecture
+
+- `src/models.py` - Data models (Event, Venue)
+- `src/http_client.py` - HTTP client with caching and rate limiting
+- `src/calendar_parser.py` - Parse daily calendar pages
+- `src/detail_parser.py` - Parse event detail pages
+- `src/scraper.py` - Main scraper orchestration
+- `src/ical_generator.py` - Generate iCal feeds
+- `src/status_page.py` - Generate status HTML page
+- `src/main.py` - Entry point
+
+## Contributing
+
+Contributions welcome! Please:
+1. Write tests for new features
+2. Follow existing code style
+3. Update documentation
+
+## License
+
+MIT License - see LICENSE file

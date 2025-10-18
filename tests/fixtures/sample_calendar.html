@@ -2,19 +2,25 @@
 <html>
 <head><title>SIFF Calendar</title></head>
 <body>
-    <div class="film-listing">
-        <h3><a href="/cinema/in-theaters/test-film">Test Film</a></h3>
-        <div class="venue">SIFF Cinema Uptown</div>
-        <div class="showtime">
-            <a href="javascript:;" data-time="19:00">7:00 PM</a>
-        </div>
+    <div class="event SIFF Cinema Uptown">
+        <a href="#modal1" class="open-popup-with-screenings">
+            <span class="title">Test Film</span>
+            <span class="time">7:00 pm</span>
+        </a>
     </div>
-    <div class="film-listing">
-        <h3><a href="/programs-and-events/docfest/doc-film">DocFest: Documentary</a></h3>
-        <div class="venue">SIFF Film Center</div>
-        <div class="showtime">
-            <a href="javascript:;" data-time="20:30">8:30 PM</a>
-        </div>
+    <div id="modal1">
+        <a href="/cinema/in-theaters/test-film">More Info</a>
+        <p>This is a test film description that is longer than 50 characters.</p>
+    </div>
+    <div class="event SIFF Film Center">
+        <a href="#modal2" class="open-popup-with-screenings">
+            <span class="title">DocFest: Documentary</span>
+            <span class="time">8:30 pm</span>
+        </a>
+    </div>
+    <div id="modal2">
+        <a href="/programs-and-events/docfest/doc-film">More Info</a>
+        <p>This is a documentary film description that is longer than 50 characters.</p>
     </div>
 </body>
 </html>
