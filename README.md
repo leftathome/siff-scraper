@@ -21,10 +21,13 @@ source venv/bin/activate  # or `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
 
 # Run scraper
-python src/scraper.py
+python src/main.py
 
 # Run tests
 pytest
+
+# Run tests with coverage
+pytest --cov=src --cov-report=html
 ```
 
 ## Output
