@@ -59,12 +59,12 @@ This project uses GitHub Actions to scrape the calendar nightly and publish to G
 ### Access Feeds
 
 After deployment, calendars are available at:
-- `https://YOUR-USERNAME.github.io/siffscrape/siff-all.ics`
-- `https://YOUR-USERNAME.github.io/siffscrape/siff-programming-only.ics`
-- `https://YOUR-USERNAME.github.io/siffscrape/siff-downtown.ics`
-- `https://YOUR-USERNAME.github.io/siffscrape/siff-uptown.ics`
-- `https://YOUR-USERNAME.github.io/siffscrape/siff-film-center.ics`
-- `https://YOUR-USERNAME.github.io/siffscrape/status.html`
+- `https://leftathome.github.io/siffscrape/siff-all.ics`
+- `https://leftathome.github.io/siffscrape/siff-programming-only.ics`
+- `https://leftathome.github.io/siffscrape/siff-downtown.ics`
+- `https://leftathome.github.io/siffscrape/siff-uptown.ics`
+- `https://leftathome.github.io/siffscrape/siff-film-center.ics`
+- `https://leftathome.github.io/siffscrape/status.html`
 
 ## Architecture
 

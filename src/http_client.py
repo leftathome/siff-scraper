@@ -10,7 +10,7 @@ class CachedHttpClient:
         self.delay_seconds = delay_seconds
         self.last_request_time = 0
         self.headers = {
-            "User-Agent": "siff-calendar-scraper/1.0 (github.com/your-username/siffscrape; contact@example.com)"
+            "User-Agent": "siff-calendar-scraper/1.0 (github.com/leftathome/siffscrape; leftathome@gmail.com)"
         }
 
     def _get_cache_path(self, url: str) -> Path:
