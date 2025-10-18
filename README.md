@@ -38,3 +38,28 @@ pytest --cov=src --cov-report=html
 - `output/siff-all.ics`
 - `output/siff-programming-only.ics`
 - `output/status.html`
+
+## Deployment
+
+This project uses GitHub Actions to scrape the calendar nightly and publish to GitHub Pages.
+
+### Setup
+
+1. Enable GitHub Pages in repository settings:
+   - Settings > Pages
+   - Source: Deploy from a branch
+   - Branch: `gh-pages`, folder: `/ (root)`
+
+2. The workflow runs automatically at 2 AM UTC daily
+
+3. Manual trigger: Actions tab > "Scrape SIFF Calendar" > "Run workflow"
+
+### Access Feeds
+
+After deployment, calendars are available at:
+- `https://YOUR-USERNAME.github.io/siffscrape/siff-all.ics`
+- `https://YOUR-USERNAME.github.io/siffscrape/siff-programming-only.ics`
+- `https://YOUR-USERNAME.github.io/siffscrape/siff-downtown.ics`
+- `https://YOUR-USERNAME.github.io/siffscrape/siff-uptown.ics`
+- `https://YOUR-USERNAME.github.io/siffscrape/siff-film-center.ics`
+- `https://YOUR-USERNAME.github.io/siffscrape/status.html`
