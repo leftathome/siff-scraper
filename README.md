@@ -23,7 +23,7 @@ source venv/bin/activate  # or `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
 
 # Run scraper
-python src/main.py
+python -m src.main
 
 # Run tests
 pytest
